@@ -367,11 +367,11 @@ $('.test').click(function () {
         $(this).attr('src', $(this).attr('data-src'));
     })
 
-    $("div.subview-right.left td.fail").closest("li").children('div.collapsible-header').find('span.test-status').attr('class', 'test-status right fail');
-    $("div.subview-right.left td.fail").closest("li").children('div.collapsible-header').find('span.test-status').text('fail');
+//     $("div.subview-right.left td.fail").closest("li").children('div.collapsible-header').find('span.test-status').attr('class', 'test-status right fail');
+//     $("div.subview-right.left td.fail").closest("li").children('div.collapsible-header').find('span.test-status').text('fail');
 
-    $("div.subview-right.left td.error").closest("li").children('div.collapsible-header').find('span.test-status').attr('class', 'test-status right fail');
-    $("div.subview-right.left td.error").closest("li").children('div.collapsible-header').find('span.test-status').text('fail');
+//     $("div.subview-right.left td.error").closest("li").children('div.collapsible-header').find('span.test-status').attr('class', 'test-status right fail');
+//     $("div.subview-right.left td.error").closest("li").children('div.collapsible-header').find('span.test-status').text('fail');
 
 
     var passElementLength = $(" div.subview-right.left  span.test-status.right.pass").length;
