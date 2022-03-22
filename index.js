@@ -525,16 +525,6 @@ $.fn.dynamicTestSearch = function (id) {
     return target;
 }
 
-
-$(document).ready(function () {
-    $('#category-collection > .category:first-child, #exception-collection > .exception:first-child, #test-collection > .test:first-child, #author-collection > .author:first-child').click();
-
-    $('#test-collection .test').dynamicTestSearch('#test-view #search-tests');
-    $('#category-collection .category').dynamicTestSearch('#category-view #search-tests');
-    $('#author-collection .author').dynamicTestSearch('#author-view #search-tests');
-    $('#exception-collection .exception').dynamicTestSearch('#exception-view #search-tests');
-});
-
     $(document).ready(function () {
         var idElement = document.getElementsByClassName('json-value');
         for (var i = 0; i < idElement.length; i++) {
