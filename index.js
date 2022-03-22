@@ -525,28 +525,4 @@ $.fn.dynamicTestSearch = function (id) {
     return target;
 }
 
-    $(document).ready(function () {
-        var idElement = document.getElementsByClassName('json-value');
-        for (var i = 0; i < idElement.length; i++) {
-            var element = idElement[i];
-            var text = element.innerText;
-            if (text != ' ') {
-                element.innerText = JSON.stringify(JSON.parse(text), null, 2);
-            }
-        }
-    }(jQuery));
-
-
-
-    $(document).ready(function () {
-        var failedElements = document.querySelectorAll("#test-collection>li[status='fail']");
-        for (var i = 0; i < failedElements.length; i++) {
-            var element = failedElements[i];
-
-            var selector = "[id=tab".concat(parseInt(element.getAttribute("test-id")) + 2, "]");
-            var elementParent = parent.document.querySelectorAll(selector);
-            elementParent[0].style.color = "#fb0005";
-
-        }
-    }(jQuery));
 
