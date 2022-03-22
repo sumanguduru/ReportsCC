@@ -544,7 +544,7 @@ $(document).ready(function () {
                 element.innerText = JSON.stringify(JSON.parse(text), null, 2);
             }
         }
-    });
+    }(jQuery));
 
 
 
@@ -558,5 +558,5 @@ $(document).ready(function () {
             elementParent[0].style.color = "#fb0005";
 
         }
-    });
+    }(jQuery));
 
